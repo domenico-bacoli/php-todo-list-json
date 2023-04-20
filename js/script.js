@@ -20,6 +20,7 @@ createApp({
                
             let data = {
                 newTodo: '',
+                status: false
             }
 
             data.newTodo = this.newTodo;
@@ -34,6 +35,14 @@ createApp({
 
             // dopo aver inserito correttamente il todo, svuoto il campo di input 
             this.newTodo = "";
+        },
+
+        todoCheck(checkStatus) {
+            if(checkStatus.status == "true"){
+                checkStatus.status = "false";
+            } else {
+                checkStatus.status = "true";
+            }
         },
     },
 

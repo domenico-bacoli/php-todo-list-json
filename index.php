@@ -24,10 +24,10 @@
         <div class="container d-flex d-flex flex-column align-items-center py-5">
             <h1 class="pb-2">Todo List</h1>
             <ul class="d-flex flex-column gap-3">
-                <li v-for="todo in todos" class="d-flex align-items-center justify-content-between">
-                    {{todo}}
+                <li v-for="todo in todos" class="d-flex align-items-center justify-content-between" :class="todo.status == 'true' ? 'completed' : ''" @click="todoCheck(todo)">
+                    {{todo.name}}
 
-                    <i class="fa-solid fa-trash"></i>
+                    <span><i class="fa-solid fa-trash"></i></span>
                 </li>
             </ul>
             <div class="input-container d-flex gap-3 mt-4">

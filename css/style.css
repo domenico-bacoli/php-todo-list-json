@@ -25,9 +25,10 @@ ul{
 }
 
 li{
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 8px 0;
     border-bottom: 1px solid rgb(171, 171, 171);
+    font-weight: bold;
 }
 
 input, .btn{
@@ -42,4 +43,9 @@ i{
     margin-left: 20px;
     cursor: pointer;
     border-radius: 8px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
 }

@@ -14,7 +14,10 @@ if(isset($_POST['newTodo'])){
     $todos = json_decode($todosJSON);
     
     // pushiamo all'inizio del json come primo elemento il nuovo todo inserito
-    array_unshift($todos, $_POST['newTodo']);
+    array_unshift($todos, [
+        "name" => $_POST['newTodo'],
+        "status" => "false"
+    ]);
     
     //convertiamo in json
     $newTodoJSON = json_encode($todos);
