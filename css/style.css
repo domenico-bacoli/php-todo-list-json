@@ -1,0 +1,45 @@
+#app{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    max-width: 500px;
+    background-color: rgb(0, 22, 44);
+    border-radius: 20px;
+}
+
+h1{
+    color: rgb(140, 140, 140);
+    font-weight: 200;
+}
+
+ul{
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+li{
+    font-size: 0.8em;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(171, 171, 171);
+}
+
+input, .btn{
+    border-radius: 14px;
+}
+
+i{
+    background-color: rgb(222, 53, 68);
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
